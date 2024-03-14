@@ -1,0 +1,29 @@
+[gd_scene load_steps=6 format=3 uid="uid://skntrc1hmeec"]
+
+[ext_resource type="Script" path="res://Scripts/pistol.gd" id="1_tn72k"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_bhnwe"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2b2xo"]
+albedo_color = Color(0.254902, 0.254902, 0.258824, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_7kbl3"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_khegm"]
+albedo_color = Color(0.584314, 0.239216, 0, 1)
+
+[node name="Pistol" type="Node3D"]
+script = ExtResource("1_tn72k")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 2.352, 0, 0, 0)
+mesh = SubResource("BoxMesh_bhnwe")
+surface_material_override/0 = SubResource("StandardMaterial3D_2b2xo")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.257928, -0.0045099, 0.00254459, -6.92337e-05, 0.870421, 0.147808, -0.00247886, -0.49357, 0.260638, 0, -0.5, 0.761468)
+mesh = SubResource("BoxMesh_7kbl3")
+surface_material_override/0 = SubResource("StandardMaterial3D_khegm")
+
+[node name="b_start" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -1.58443)
