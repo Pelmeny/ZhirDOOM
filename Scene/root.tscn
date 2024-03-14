@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://d0vxt75kthqr8"]
 
-[ext_resource type="Script" path="res://Scripts/exit.gd" id="1_7mtve"]
+[ext_resource type="Script" path="res://Scripts/Exit.gd" id="1_7mtve"]
 [ext_resource type="PackedScene" uid="uid://cy7tkeb7ixgy5" path="res://Scene/floor.tscn" id="2_3gdyv"]
 [ext_resource type="PackedScene" uid="uid://dsccmdwf0g6p0" path="res://Scene/player.tscn" id="3_gu4b5"]
 
@@ -10,7 +10,7 @@ script = ExtResource("1_7mtve")
 [node name="Floor" parent="." instance=ExtResource("2_3gdyv")]
 
 [node name="Player" parent="." instance=ExtResource("3_gu4b5")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.79165, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.567714, 0)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.452653, 0.891687, 0, -0.891687, 0.452653, 0, 32.1559, 5.75888)
