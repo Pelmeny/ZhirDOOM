@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://dsccmdwf0g6p0"]
 
-[ext_resource type="Script" path="res://Player.gd" id="1_yk02n"]
+[ext_resource type="Script" path="res://Scripts/Player.gd" id="1_yk02n"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_34myt"]
 
@@ -15,3 +15,4 @@ shape = SubResource("CapsuleShape3D_34myt")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.74882, 0)
 
 [node name="Camera3D" type="Camera3D" parent="Head"]
+fov = 80.0
