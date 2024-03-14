@@ -1,3 +1,4 @@
+
 [gd_scene load_steps=5 format=3 uid="uid://d0vxt75kthqr8"]
 
 [ext_resource type="Script" path="res://Scripts/Exit.gd" id="1_7mtve"]
