@@ -45,3 +45,7 @@ func _input(e):
 		rotate_y(deg_to_rad(-e.relative.x * mouse_sensity))
 		head.rotate_x(deg_to_rad(-e.relative.y * mouse_sensity))
 		head.rotation.x = clamp(head.rotation.x, deg_to_rad(-90), deg_to_rad(90))
+	elif e is InputEventMouseButton:
+		if e.pressed:
+			$Head/Pistol.fire()
+
